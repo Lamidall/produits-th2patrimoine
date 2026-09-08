@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santé &amp; Prévoyance | TH2 Patrimoine</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html"><img src="../assets/logo-th2-patrimoine.png" alt="TH2 Patrimoine" width="228" height="48"></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="assurance-vie.html">Assurance-vie</a></li>
+                    <li><a href="capitalisation.html">Capitalisation</a></li>
+                    <li><a href="per.html">PER</a></li>
+                    <li><a href="scpi.html">SCPI</a></li>
+                    <li class="dropdown">
+                        <a href="assurances.html" class="active">Assurances</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="assurances-iard.html">IARD</a></li>
+                            <li><a href="assurances-prevoyances.html" class="active">Santé &amp; Prévoyance</a></li>
+                            <li><a href="assurances-entreprises.html">Contrats collectifs Entreprises</a></li>
+                            <li><a href="assurances-emprunteurs.html">Assurances-emprunteurs</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="mobile-menu-btn" type="button" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Product Header -->
+    <section class="product-header">
+        <div class="container">
+            <h1>Santé &amp; Prévoyance</h1>
+            <p>Indemnités Journalières (TNS) • Santé • GAV • Capitaux décès</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="product-content prevoyance-page">
+        <div class="container">
+            <!-- Partenaires Prévoyance -->
+            <section class="product-section partners-section">
+                <h2>Nos partenaires Prévoyance</h2>
+                <div class="partners-grid">
+                    <div class="partner-card">
+                        <div class="partner-logo">
+                            <img src="../assets/logos/swisslife.svg" alt="Logo SwissLife" loading="lazy" width="120" height="44">
+                        </div>
+                    </div>
+                    <div class="partner-card">
+                        <div class="partner-logo">
+                            <img src="../assets/logos/generali.svg" alt="Logo Generali" loading="lazy" width="120" height="44">
+                        </div>
+                    </div>
+                    <div class="partner-card">
+                        <div class="partner-logo">
+                            <img src="../assets/logos/malakoff-humanis.png" alt="Logo Malakoff Humanis" class="logo-lg" loading="lazy" width="110" height="64">
+                        </div>
+                    </div>
+                    <div class="partner-card">
+                        <div class="partner-logo">
+                            <img src="../assets/logos/april.png" alt="Logo April" class="logo-lg" loading="lazy" width="102" height="64">
+                        </div>
+                    </div>
+                    <div class="partner-card">
+                        <div class="partner-logo">
+                            <img src="../assets/logos/abeille-assurances.png" alt="Logo Abeille Assurances" loading="lazy" width="120" height="44">
+                        </div>
+                    </div>
+                    <div class="partner-card">
+                        <div class="partner-logo">
+                            <img src="../assets/logos/apivia.jpg" alt="Logo Apivia" loading="lazy" width="120" height="44">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Simulateur de perte de revenus en cas d'arrêt de travail -->
+            <section class="product-section simulator-section" id="simulateur">
+                <h2>Simulateur de perte de revenus en cas d'arrêt de travail</h2>
+                <p class="section-title">En cas d'arrêt de travail (maladie ou accident de la vie privée), les régimes obligatoires n'indemnisent qu'une fraction de vos revenus&nbsp;: indemnités journalières de la Sécurité sociale (art. L.&nbsp;323-4 du Code de la Sécurité sociale), régime des indépendants (art. L.&nbsp;622-1 et suivants) et, pour les salariés, maintien légal de salaire par l'employeur (art. L.&nbsp;1226-1 du Code du travail). Indiquez votre situation professionnelle, votre profession et votre rémunération&nbsp;: le simulateur identifie votre caisse obligatoire et estime la perte de revenus que la loi ne couvre pas si vous n'avez souscrit aucun contrat de prévoyance.</p>
+
+                <div class="simulator">
+                    <div class="sim-config">
+                        <div class="sim-block sim-params-block">
+                            <h3><span class="sim-step">1</span> Votre situation professionnelle</h3>
+
+                            <fieldset class="sim-strategy sim-field">
+                                <legend>Votre statut</legend>
+                                <label class="sim-strategy-option">
+                                    <input type="radio" name="prev-statut" value="tns" checked>
+                                    <span class="sim-strategy-card">
+                                        <i class="fas fa-user-tie" aria-hidden="true"></i>
+                                        <span>
+                                            <strong>TNS &ndash; Travailleur non salarié</strong>
+                                            <small>Entrepreneur individuel, gérant majoritaire de SARL/EURL, artisan, commerçant, profession libérale, exploitant agricole&hellip;</small>
+                                        </span>
+                                    </span>
+                                </label>
+                                <label class="sim-strategy-option">
+                                    <input type="radio" name="prev-statut" value="assimile">
+                                    <span class="sim-strategy-card">
+                                        <i class="fas fa-user-gear" aria-hidden="true"></i>
+                                        <span>
+                                            <strong>Assimilé salarié</strong>
+                                            <small>Président de SAS/SASU, gérant minoritaire ou égalitaire de SARL&nbsp;: régime général, mais sans maintien de salaire ni assurance chômage.</small>
+                                        </span>
+                                    </span>
+                                </label>
+                                <label class="sim-strategy-option">
+                                    <input type="radio" name="prev-statut" value="salarie">
+                                    <span class="sim-strategy-card">
+                                        <i class="fas fa-id-card" aria-hidden="true"></i>
+                                        <span>
+                                            <strong>Salarié</strong>
+                                            <small>Contrat de travail&nbsp;: IJ de la Sécurité sociale et maintien légal de salaire par l'employeur (loi de mensualisation).</small>
+                                        </span>
+                                    </span>
+                                </label>
+                            </fieldset>
+
+                            <div id="prev-tns-bloc">
+                                <div class="sim-field">
+                                    <label for="prev-profession">Votre profession exacte (nomenclature INSEE)</label>
+                                    <select id="prev-profession" class="sim-select">
+                                        <option value="">&mdash; Sélectionnez votre profession &mdash;</option>
+                                        <optgroup label="Agriculteurs exploitants (PCS 10)">
+                                            <option value="msa">Agriculteur, éleveur, viticulteur exploitant</option>
+                                        </optgroup>
+                                        <optgroup label="Artisans (PCS 21)">
+                                            <option value="ssi">Artisan du bâtiment et des travaux publics</option>
+                                            <option value="ssi">Artisan de fabrication, de production alimentaire</option>
+                                            <option value="ssi">Artisan de services (coiffure, taxi, réparation&hellip;)</option>
+                                        </optgroup>
+                                        <optgroup label="Commerçants et assimilés (PCS 22)">
+                                            <option value="ssi">Commerçant de détail ou de gros</option>
+                                            <option value="ssi">Hôtelier, restaurateur, cafetier</option>
+                                            <option value="ssi">Agent immobilier, intermédiaire de commerce</option>
+                                        </optgroup>
+                                        <optgroup label="Chefs d'entreprise (PCS 23)">
+                                            <option value="ssi">Chef d'entreprise, gérant majoritaire de SARL/EURL</option>
+                                        </optgroup>
+                                        <optgroup label="Professions libérales de santé (PCS 31 &ndash; 43)">
+                                            <option value="carmf">Médecin libéral, généraliste ou spécialiste (PCS 311a/b)</option>
+                                            <option value="carcdsf_d">Chirurgien-dentiste (PCS 311c)</option>
+                                            <option value="carcdsf_sf">Sage-femme libérale</option>
+                                            <option value="cavp">Pharmacien titulaire d'officine</option>
+                                            <option value="carpv">Vétérinaire (PCS 311e)</option>
+                                            <option value="carpimko">Infirmier libéral</option>
+                                            <option value="carpimko">Masseur-kinésithérapeute, orthophoniste, orthoptiste, pédicure-podologue</option>
+                                            <option value="cipav">Psychologue, psychothérapeute (PCS 311d)</option>
+                                            <option value="cipav">Ostéopathe, chiropracteur, diététicien</option>
+                                        </optgroup>
+                                        <optgroup label="Professions libérales juridiques et techniques (PCS 31 &ndash; 37)">
+                                            <option value="cnbf">Avocat (PCS 312a)</option>
+                                            <option value="cprn">Notaire</option>
+                                            <option value="cavom">Commissaire de justice (huissier), greffier de tribunal de commerce</option>
+                                            <option value="cavec">Expert-comptable, commissaire aux comptes</option>
+                                            <option value="cavamac">Agent général d'assurance</option>
+                                            <option value="cipav">Architecte, maître d'&oelig;uvre, géomètre-expert</option>
+                                            <option value="cipav">Ingénieur-conseil, expert technique</option>
+                                            <option value="cipav">Moniteur de ski, guide de haute montagne</option>
+                                        </optgroup>
+                                        <optgroup label="Autres indépendants">
+                                            <option value="ssi">Profession libérale non réglementée (consultant, formateur, développeur, coach&hellip;)</option>
+                                            <option value="ssi">Micro-entrepreneur (activité artisanale, commerciale ou libérale non réglementée)</option>
+                                        </optgroup>
+                                    </select>
+                                    <p class="sim-field-hint">Profession selon la nomenclature INSEE des professions et catégories socioprofessionnelles (PCS 2020). Elle détermine la caisse obligatoire à laquelle vous cotisez, et donc vos indemnités journalières légales.</p>
+                                </div>
+                                <div class="sim-caisse" id="prev-caisse" hidden></div>
+                            </div>
+                        </div>
+
+                        <div class="sim-block sim-params-block">
+                            <h3><span class="sim-step">2</span> Vos revenus</h3>
+
+                            <div class="sim-field">
+                                <label for="prev-remu">Rémunération nette mensuelle (hors dividendes)</label>
+                                <div class="sim-input-suffix">
+                                    <input type="number" id="prev-remu" min="0" step="100" value="4000" inputmode="numeric">
+                                    <span>€ / mois</span>
+                                </div>
+                                <p class="sim-field-hint">Rémunération nette moyenne que vous percevez chaque mois au titre de votre activité, avant impôt sur le revenu et hors dividendes (les dividendes ne sont pas pris en compte par les régimes obligatoires pour le calcul des indemnités journalières).</p>
+                            </div>
+
+                            <div class="sim-field">
+                                <p class="sim-field-hint"><strong>Méthode de calcul&nbsp;:</strong> les indemnités journalières légales sont calculées sur la moyenne de vos revenus passés&nbsp;&mdash; le revenu annuel moyen des 3&nbsp;dernières années civiles pour les indépendants (1/730e par jour d'arrêt), les 3&nbsp;derniers mois de salaire brut pour les salariés et assimilés. Le simulateur suppose des revenus constants sur cette période.</p>
+                                <div class="sim-warning"><i class="fas fa-triangle-exclamation" aria-hidden="true"></i><div>
+                                    <strong>Moins de 12&nbsp;mois de cotisation&nbsp;?</strong>Un indépendant affilié depuis moins de 12&nbsp;mois n'a droit à <em>aucune</em> indemnité journalière de son régime obligatoire&nbsp;: en cas d'arrêt de travail, la loi ne prévoit aucun revenu de remplacement. Un salarié conserve ses IJ de la Sécurité sociale, mais le maintien légal de salaire par l'employeur exige au moins 1&nbsp;an d'ancienneté. La première année d'activité est donc la période où un contrat de prévoyance individuelle est le plus indispensable.
+                                </div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sim-results" id="prev-results" aria-live="polite"></div>
+
+                    <p class="partners-note">Simulation non contractuelle, fournie à titre purement indicatif sur la base de la réglementation en vigueur&nbsp;: arrêt de travail pour maladie ou accident de la vie privée (hors accident du travail, maladie professionnelle et affection de longue durée), revenus supposés constants sur les trois dernières années, PASS 2025 de 47&nbsp;100&nbsp;€, indemnités journalières de la Sécurité sociale plafonnées à 1,4&nbsp;SMIC depuis le 1er&nbsp;avril&nbsp;2025, CSG-CRDS de 6,7&nbsp;% déduite des indemnités, salaire brut estimé à partir du net (coefficient&nbsp;1,282) pour les salariés et assimilés. Les montants versés par les caisses des professions libérales sont des forfaits indicatifs 2025, susceptibles de revalorisation et pouvant dépendre de votre classe de cotisation. Le maintien légal de salaire (salariés) suppose au moins un an d'ancienneté&nbsp;; votre convention collective peut prévoir mieux. Rapprochez-vous de votre conseiller pour une étude personnalisée.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TH2 Patrimoine</h3>
+                    <p>Cabinet de conseil et de stratégie en organisation patrimoniale</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Nos Solutions</h3>
+                    <ul>
+                        <li><a href="assurance-vie.html">Assurance-vie</a></li>
+                        <li><a href="capitalisation.html">Capitalisation</a></li>
+                        <li><a href="per.html">PER</a></li>
+                        <li><a href="scpi.html">SCPI</a></li>
+                        <li><a href="assurances.html">Assurances</a>
+                            <ul>
+                                <li><a href="assurances-iard.html">IARD</a></li>
+                                <li><a href="assurances-prevoyances.html">Santé &amp; Prévoyance</a></li>
+                                <li><a href="assurances-entreprises.html">Contrats collectifs Entreprises</a></li>
+                            <li><a href="assurances-emprunteurs.html">Assurances-emprunteurs</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Informations</h3>
+                    <ul>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">CGU</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-phone"></i> 01 59 03 05 74</p>
+                    <p><i class="fas fa-envelope"></i> contact@th2patrimoine.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Conseiller en Investissements Financiers (CIF) - Membre de l'ANACOFI</p>
+                <p>&copy; 2025 TH2 Patrimoine. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/prevoyance-simulateur.js"></script>
+</body>
+</html>
